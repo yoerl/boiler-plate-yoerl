@@ -96,6 +96,7 @@ HOW?
 <iframe> 태그는 웹 문서에 다른 문서를 포함하는데 사용합니다.
 --------------------------------------------------------------------ETC
 <code>System.out.println(var);</code>
+개발시스템 코드를 화면에 그대로 출력할 때
 --------------------------------------------------------------------참조 사이트
 
 https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Basic_usage
