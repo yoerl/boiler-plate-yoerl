@@ -1,6 +1,5 @@
 # semantics-tag
-
-<code>
+```
 레이아웃 개발시
 빠르게 개발하기 위한 문서툴 입니다.
 
@@ -107,4 +106,4 @@ https://medium.com/before-semicolon/10-html-semantic-tags-and-when-to-use-them-5
 http://www.tcpschool.com/html-tags/meter
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element
    
-</code>
+```
