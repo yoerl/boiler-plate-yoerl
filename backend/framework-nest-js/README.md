@@ -1,5 +1,5 @@
 https://docs.nestjs.com/
 
-nest g co  
-nest g mo  
-nest g s  
+nest g co common
+nest g mo common
+nest g s common
