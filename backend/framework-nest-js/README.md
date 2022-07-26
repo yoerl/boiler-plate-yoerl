@@ -9,3 +9,4 @@ nest g mo auth
 nest g co auth  
 nest g s auth  
  
+yarn add @nestjs/jwt @nestjs/passport passport passport-jwt --save
