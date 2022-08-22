@@ -1,0 +1,667 @@
+CREATE TABLE `tb_member2` (
+	`member_id`	VARCHAR(15)	NOT NULL,
+	`member_div`	VARCHAR(15)	NULL,
+	`member_nm`	VARCHAR(15)	NULL,
+	`member_no`	VARCHAR(15)	NULL,
+	`member_email`	VARCHAR(15)	NULL,
+	`member_birth_day`	DATE	NULL,
+	`member_adress`	VARCHAR(15)	NULL,
+	`data_create_date`	DATE	NULL
+);
+
+CREATE TABLE `tb_login` (
+	`social_seq`	VARCHAR(255)	NOT NULL,
+	`member_id`	VARCHAR(15)	NOT NULL,
+	`login_type`	VARCHAR(15)	NULL,
+	`login_id`	VARCHAR(15)	NULL,
+	`login_seq`	VARCHAR(15)	NULL,
+	`data_create_date`	DATE	NULL
+);
+
+CREATE TABLE `CopyOfUntitled2` (
+	`Key`	VARCHAR(255)	NOT NULL,
+	`Field3`	VARCHAR(255)	NULL,
+	`Field6`	VARCHAR(255)	NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`Field2`	VARCHAR(255)	NULL,
+	`Field4`	VARCHAR(255)	NULL,
+	`Field5`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `wb_common_code` (
+	`common_code_seq`	VARCHAR(255)	NOT NULL,
+	`category_code`	VARCHAR(255)	NULL,
+	`category_name`	VARCHAR(255)	NULL,
+	`category_code_value`	VARCHAR(255)	NULL,
+	`category_code_value_name`	VARCHAR(255)	NULL,
+	`parent_category_code`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `CopyOfUntitled` (
+	`Key`	VARCHAR(255)	NOT NULL,
+	`Key2`	VARCHAR(255)	NOT NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `Untitled3` (
+	`Key`	VARCHAR(255)	NOT NULL,
+	`member_id`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `Untitled` (
+	`social_seq`	VARCHAR(255)	NOT NULL,
+	`member_id`	VARCHAR(15)	NOT NULL,
+	`access_token`	VARCHAR(255)	NULL,
+	`expires_in`	VARCHAR(255)	NULL,
+	`refresh_token`	VARCHAR(255)	NULL,
+	`refresh_token_expires_in`	VARCHAR(255)	NULL,
+	`scope`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `Untitled4` (
+	`Key`	VARCHAR(255)	NOT NULL,
+	`Field2`	VARCHAR(255)	NULL,
+	`Field3`	VARCHAR(255)	NULL,
+	`Field4`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `CopyOfUntitled4` (
+	`member_id2`	VARCHAR(15)	NOT NULL,
+	`member_id`	VARCHAR(255)	NULL,
+	`Field2`	VARCHAR(255)	NULL,
+	`Field3`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `CopyOfCopyOfUntitled4` (
+	`member_id2`	VARCHAR(15)	NOT NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`Field2`	VARCHAR(255)	NULL,
+	`Field3`	VARCHAR(255)	NULL,
+	`Field4`	VARCHAR(255)	NULL,
+	`Field5`	VARCHAR(255)	NULL,
+	`Field6`	VARCHAR(255)	NULL,
+	`Field7`	VARCHAR(255)	NULL,
+	`Field8`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `Untitled5` (
+
+);
+
+CREATE TABLE `Untitled6` (
+	`Key`	VARCHAR(255)	NOT NULL,
+	`Key2`	VARCHAR(255)	NOT NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`Field2`	VARCHAR(255)	NULL,
+	`Field3`	VARCHAR(255)	NULL,
+	`Field4`	VARCHAR(255)	NULL,
+	`Field5`	VARCHAR(255)	NULL,
+	`Field6`	VARCHAR(255)	NULL,
+	`Field7`	VARCHAR(255)	NULL,
+	`Field8`	VARCHAR(255)	NULL,
+	`Field9`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `Untitled7` (
+	`member_id`	VARCHAR(255)	NOT NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`Field2`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `CopyOfUntitled42` (
+	`Key`	VARCHAR(255)	NOT NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`Field4`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `Untitled8` (
+	`Key2`	VARCHAR(255)	NOT NULL,
+	`Key`	VARCHAR(255)	NOT NULL,
+	`user_seq`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `Untitled2` (
+	`Key`	VARCHAR(255)	NOT NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `CopyOfUntitled22` (
+	`Key2`	VARCHAR(255)	NOT NULL,
+	`Key`	VARCHAR(255)	NOT NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`Field2`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `wb_goods_trait` (
+	`goods_trait_div`	VARCHAR(255)	NOT NULL,
+	`goods_seq`	VARCHAR(255)	NOT NULL,
+	`goods_kind`	VARCHAR(255)	NOT NULL,
+	`company_code`	VARCHAR(255)	NOT NULL,
+	`goods_charact_nm`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `wb_user_choice` (
+	`goods_trait_div`	VARCHAR(255)	NOT NULL,
+	`goods_seq`	VARCHAR(255)	NOT NULL,
+	`Key`	VARCHAR(255)	NOT NULL,
+	`user_id`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `wb_goods` (
+	`goods_code`	VARCHAR(255)	NOT NULL,
+	`goods_kind`	VARCHAR(255)	NOT NULL,
+	`company_code`	VARCHAR(255)	NOT NULL,
+	`goods_name`	VARCHAR(255)	NULL,
+	`goods_img_url`	VARCHAR(255)	NULL,
+	`goods_ introduce`	VARCHAR(255)	NULL,
+	`company_nm`	VARCHAR(255)	NULL,
+	`goods_cost`	VARCHAR(255)	NULL,
+	`goods_price`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `tb_member` (
+	`member_id`	VARCHAR(15)	NOT NULL,
+	`member_nm`	VARCHAR(15)	NULL,
+	`member_no`	VARCHAR(15)	NULL,
+	`member_email`	VARCHAR(15)	NULL,
+	`member_nick_name`	VARCHAR(255)	NULL,
+	`member_adress`	VARCHAR(15)	NULL,
+	`member_status`	VARCHAR(255)	NULL,
+	`member_point`	VARCHAR(255)	NULL,
+	`member_last_login`	VARCHAR(255)	NULL,
+	`member_leave_yn`	VARCHAR(255)	NULL,
+	`data_create_date`	DATE	NULL
+);
+
+CREATE TABLE `wb_company` (
+	`company_code`	VARCHAR(255)	NOT NULL,
+	`company_owner_name`	VARCHAR(255)	NULL,
+	`company_type`	VARCHAR(255)	NULL,
+	`company_name`	VARCHAR(255)	NULL,
+	`company_phone_number`	VARCHAR(255)	NULL,
+	`company_adress`	VARCHAR(255)	NULL,
+	`company_business_no`	VARCHAR(255)	NULL,
+	`company_ Introduce`	VARCHAR(255)	NULL,
+	`company_ operating_status`	VARCHAR(255)	NULL,
+	`company_logo_url`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `wb_member_ role` (
+	`member_role_code`	VARCHAR(255)	NOT NULL,
+	`member_id`	VARCHAR(15)	NOT NULL,
+	`member_role_name`	VARCHAR(15)	NULL,
+	`data_create_date`	DATE	NULL
+);
+
+CREATE TABLE `wb_goods_cert` (
+	`goods_seq`	VARCHAR(255)	NOT NULL,
+	`goods_kind`	VARCHAR(255)	NOT NULL,
+	`Key`	VARCHAR(255)	NOT NULL,
+	`cert_img_url`	VARCHAR(255)	NULL,
+	`Field`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `Untitled10` (
+	`status_change_seq`	VARCHAR(255)	NOT NULL,
+	`member_id`	VARCHAR(15)	NOT NULL,
+	`member_status`	VARCHAR(15)	NULL,
+	`data_create_date`	DATE	NULL
+);
+
+CREATE TABLE `wb_point_history` (
+	`point_seq`	VARCHAR(255)	NOT NULL,
+	`member_id`	VARCHAR(15)	NOT NULL,
+	`point_type`	VARCHAR(255)	NULL,
+	`point_stack`	VARCHAR(255)	NULL,
+	`member_div`	VARCHAR(15)	NULL,
+	`data_create_date`	DATE	NULL
+);
+
+CREATE TABLE `wb_goods_board` (
+	`goods_board_code`	VARCHAR(255)	NOT NULL,
+	`goods_board_seq`	VARCHAR(255)	NOT NULL,
+	`goods_board_kind`	VARCHAR(255)	NOT NULL,
+	`company_code`	VARCHAR(255)	NOT NULL,
+	`board_contents`	VARCHAR(255)	NULL,
+	`board_status`	VARCHAR(255)	NULL,
+	`delete_yn`	VARCHAR(255)	NULL,
+	`data_update_date`	VARCHAR(255)	NULL,
+	`data_delete_date`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `wb_board_image` (
+	`goods_code`	VARCHAR(255)	NOT NULL,
+	`goods_seq`	VARCHAR(255)	NOT NULL,
+	`goods_kind`	VARCHAR(255)	NOT NULL,
+	`Key`	VARCHAR(255)	NOT NULL,
+	`Field6`	VARCHAR(255)	NULL,
+	`Field5`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `wb_goods_buy_history` (
+	`goods_code`	VARCHAR(255)	NOT NULL,
+	`goods_kind`	VARCHAR(255)	NOT NULL,
+	`company_code`	VARCHAR(255)	NOT NULL,
+	`Field2`	VARCHAR(255)	NULL,
+	`Field`	VARCHAR(255)	NULL
+);
+
+CREATE TABLE `tb_basket` (
+	`basket_seq`	VARCHAR(255)	NOT NULL,
+	`member_id`	VARCHAR(15)	NOT NULL,
+	`goods_code`	VARCHAR(255)	NULL,
+	`goods_cnt`	VARCHAR(255)	NULL,
+	`data_create_date`	VARCHAR(255)	NULL
+);
+
+ALTER TABLE `tb_member2` ADD CONSTRAINT `PK_TB_MEMBER2` PRIMARY KEY (
+	`member_id`
+);
+
+ALTER TABLE `tb_login` ADD CONSTRAINT `PK_TB_LOGIN` PRIMARY KEY (
+	`social_seq`,
+	`member_id`
+);
+
+ALTER TABLE `CopyOfUntitled2` ADD CONSTRAINT `PK_COPYOFUNTITLED2` PRIMARY KEY (
+	`Key`
+);
+
+ALTER TABLE `wb_common_code` ADD CONSTRAINT `PK_WB_COMMON_CODE` PRIMARY KEY (
+	`common_code_seq`
+);
+
+ALTER TABLE `CopyOfUntitled` ADD CONSTRAINT `PK_COPYOFUNTITLED` PRIMARY KEY (
+	`Key`,
+	`Key2`
+);
+
+ALTER TABLE `Untitled3` ADD CONSTRAINT `PK_UNTITLED3` PRIMARY KEY (
+	`Key`
+);
+
+ALTER TABLE `Untitled` ADD CONSTRAINT `PK_UNTITLED` PRIMARY KEY (
+	`social_seq`,
+	`member_id`
+);
+
+ALTER TABLE `Untitled4` ADD CONSTRAINT `PK_UNTITLED4` PRIMARY KEY (
+	`Key`
+);
+
+ALTER TABLE `CopyOfUntitled4` ADD CONSTRAINT `PK_COPYOFUNTITLED4` PRIMARY KEY (
+	`member_id2`
+);
+
+ALTER TABLE `CopyOfCopyOfUntitled4` ADD CONSTRAINT `PK_COPYOFCOPYOFUNTITLED4` PRIMARY KEY (
+	`member_id2`
+);
+
+ALTER TABLE `Untitled6` ADD CONSTRAINT `PK_UNTITLED6` PRIMARY KEY (
+	`Key`,
+	`Key2`
+);
+
+ALTER TABLE `Untitled7` ADD CONSTRAINT `PK_UNTITLED7` PRIMARY KEY (
+	`member_id`
+);
+
+ALTER TABLE `CopyOfUntitled42` ADD CONSTRAINT `PK_COPYOFUNTITLED42` PRIMARY KEY (
+	`Key`
+);
+
+ALTER TABLE `Untitled8` ADD CONSTRAINT `PK_UNTITLED8` PRIMARY KEY (
+	`Key2`,
+	`Key`
+);
+
+ALTER TABLE `Untitled2` ADD CONSTRAINT `PK_UNTITLED2` PRIMARY KEY (
+	`Key`
+);
+
+ALTER TABLE `CopyOfUntitled22` ADD CONSTRAINT `PK_COPYOFUNTITLED22` PRIMARY KEY (
+	`Key2`,
+	`Key`
+);
+
+ALTER TABLE `wb_goods_trait` ADD CONSTRAINT `PK_WB_GOODS_TRAIT` PRIMARY KEY (
+	`goods_trait_div`,
+	`goods_seq`,
+	`goods_kind`,
+	`company_code`
+);
+
+ALTER TABLE `wb_user_choice` ADD CONSTRAINT `PK_WB_USER_CHOICE` PRIMARY KEY (
+	`goods_trait_div`,
+	`goods_seq`,
+	`Key`
+);
+
+ALTER TABLE `wb_goods` ADD CONSTRAINT `PK_WB_GOODS` PRIMARY KEY (
+	`goods_code`,
+	`goods_kind`,
+	`company_code`
+);
+
+ALTER TABLE `tb_member` ADD CONSTRAINT `PK_TB_MEMBER` PRIMARY KEY (
+	`member_id`
+);
+
+ALTER TABLE `wb_company` ADD CONSTRAINT `PK_WB_COMPANY` PRIMARY KEY (
+	`company_code`
+);
+
+ALTER TABLE `wb_member_ role` ADD CONSTRAINT `PK_WB_MEMBER_ ROLE` PRIMARY KEY (
+	`member_role_code`,
+	`member_id`
+);
+
+ALTER TABLE `wb_goods_cert` ADD CONSTRAINT `PK_WB_GOODS_CERT` PRIMARY KEY (
+	`goods_seq`,
+	`goods_kind`,
+	`Key`
+);
+
+ALTER TABLE `Untitled10` ADD CONSTRAINT `PK_UNTITLED10` PRIMARY KEY (
+	`status_change_seq`,
+	`member_id`
+);
+
+ALTER TABLE `wb_point_history` ADD CONSTRAINT `PK_WB_POINT_HISTORY` PRIMARY KEY (
+	`point_seq`,
+	`member_id`
+);
+
+ALTER TABLE `wb_goods_board` ADD CONSTRAINT `PK_WB_GOODS_BOARD` PRIMARY KEY (
+	`goods_board_code`,
+	`goods_board_seq`,
+	`goods_board_kind`,
+	`company_code`
+);
+
+ALTER TABLE `wb_board_image` ADD CONSTRAINT `PK_WB_BOARD_IMAGE` PRIMARY KEY (
+	`goods_code`,
+	`goods_seq`,
+	`goods_kind`,
+	`Key`
+);
+
+ALTER TABLE `wb_goods_buy_history` ADD CONSTRAINT `PK_WB_GOODS_BUY_HISTORY` PRIMARY KEY (
+	`goods_code`,
+	`goods_kind`,
+	`company_code`
+);
+
+ALTER TABLE `tb_basket` ADD CONSTRAINT `PK_TB_BASKET` PRIMARY KEY (
+	`basket_seq`,
+	`member_id`
+);
+
+ALTER TABLE `tb_login` ADD CONSTRAINT `FK_tb_member2_TO_tb_login_1` FOREIGN KEY (
+	`member_id`
+)
+REFERENCES `tb_member2` (
+	`member_id`
+);
+
+ALTER TABLE `CopyOfUntitled` ADD CONSTRAINT `FK_Untitled7_TO_CopyOfUntitled_1` FOREIGN KEY (
+	`Key2`
+)
+REFERENCES `Untitled7` (
+	`member_id`
+);
+
+ALTER TABLE `Untitled3` ADD CONSTRAINT `FK_Untitled7_TO_Untitled3_1` FOREIGN KEY (
+	`Key`
+)
+REFERENCES `Untitled7` (
+	`member_id`
+);
+
+ALTER TABLE `Untitled` ADD CONSTRAINT `FK_tb_login_TO_Untitled_1` FOREIGN KEY (
+	`social_seq`
+)
+REFERENCES `tb_login` (
+	`social_seq`
+);
+
+ALTER TABLE `Untitled` ADD CONSTRAINT `FK_tb_login_TO_Untitled_2` FOREIGN KEY (
+	`member_id`
+)
+REFERENCES `tb_login` (
+	`member_id`
+);
+
+ALTER TABLE `CopyOfUntitled4` ADD CONSTRAINT `FK_tb_member2_TO_CopyOfUntitled4_1` FOREIGN KEY (
+	`member_id2`
+)
+REFERENCES `tb_member2` (
+	`member_id`
+);
+
+ALTER TABLE `CopyOfCopyOfUntitled4` ADD CONSTRAINT `FK_CopyOfUntitled4_TO_CopyOfCopyOfUntitled4_1` FOREIGN KEY (
+	`member_id2`
+)
+REFERENCES `CopyOfUntitled4` (
+	`member_id2`
+);
+
+ALTER TABLE `Untitled6` ADD CONSTRAINT `FK_Untitled7_TO_Untitled6_1` FOREIGN KEY (
+	`Key2`
+)
+REFERENCES `Untitled7` (
+	`member_id`
+);
+
+ALTER TABLE `Untitled7` ADD CONSTRAINT `FK_tb_member2_TO_Untitled7_1` FOREIGN KEY (
+	`member_id`
+)
+REFERENCES `tb_member2` (
+	`member_id`
+);
+
+ALTER TABLE `CopyOfUntitled42` ADD CONSTRAINT `FK_Untitled4_TO_CopyOfUntitled42_1` FOREIGN KEY (
+	`Key`
+)
+REFERENCES `Untitled4` (
+	`Key`
+);
+
+ALTER TABLE `Untitled8` ADD CONSTRAINT `FK_Untitled4_TO_Untitled8_1` FOREIGN KEY (
+	`Key`
+)
+REFERENCES `Untitled4` (
+	`Key`
+);
+
+ALTER TABLE `CopyOfUntitled22` ADD CONSTRAINT `FK_Untitled2_TO_CopyOfUntitled22_1` FOREIGN KEY (
+	`Key`
+)
+REFERENCES `Untitled2` (
+	`Key`
+);
+
+ALTER TABLE `wb_goods_trait` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_trait_1` FOREIGN KEY (
+	`goods_seq`
+)
+REFERENCES `wb_goods` (
+	`goods_code`
+);
+
+ALTER TABLE `wb_goods_trait` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_trait_2` FOREIGN KEY (
+	`goods_kind`
+)
+REFERENCES `wb_goods` (
+	`goods_kind`
+);
+
+ALTER TABLE `wb_goods_trait` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_trait_3` FOREIGN KEY (
+	`company_code`
+)
+REFERENCES `wb_goods` (
+	`company_code`
+);
+
+ALTER TABLE `wb_user_choice` ADD CONSTRAINT `FK_wb_goods_trait_TO_wb_user_choice_1` FOREIGN KEY (
+	`goods_trait_div`
+)
+REFERENCES `wb_goods_trait` (
+	`goods_trait_div`
+);
+
+ALTER TABLE `wb_user_choice` ADD CONSTRAINT `FK_wb_goods_trait_TO_wb_user_choice_2` FOREIGN KEY (
+	`goods_seq`
+)
+REFERENCES `wb_goods_trait` (
+	`goods_seq`
+);
+
+ALTER TABLE `wb_user_choice` ADD CONSTRAINT `FK_wb_goods_trait_TO_wb_user_choice_3` FOREIGN KEY (
+	`Key`
+)
+REFERENCES `wb_goods_trait` (
+	`company_code`
+);
+
+ALTER TABLE `wb_goods` ADD CONSTRAINT `FK_wb_company_TO_wb_goods_1` FOREIGN KEY (
+	`company_code`
+)
+REFERENCES `wb_company` (
+	`company_code`
+);
+
+ALTER TABLE `wb_member_ role` ADD CONSTRAINT `FK_tb_member_TO_wb_member_ role_1` FOREIGN KEY (
+	`member_id`
+)
+REFERENCES `tb_member` (
+	`member_id`
+);
+
+ALTER TABLE `wb_goods_cert` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_cert_1` FOREIGN KEY (
+	`goods_seq`
+)
+REFERENCES `wb_goods` (
+	`goods_code`
+);
+
+ALTER TABLE `wb_goods_cert` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_cert_2` FOREIGN KEY (
+	`goods_kind`
+)
+REFERENCES `wb_goods` (
+	`goods_kind`
+);
+
+ALTER TABLE `wb_goods_cert` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_cert_3` FOREIGN KEY (
+	`Key`
+)
+REFERENCES `wb_goods` (
+	`company_code`
+);
+
+ALTER TABLE `Untitled10` ADD CONSTRAINT `FK_tb_member_TO_Untitled10_1` FOREIGN KEY (
+	`member_id`
+)
+REFERENCES `tb_member` (
+	`member_id`
+);
+
+ALTER TABLE `wb_point_history` ADD CONSTRAINT `FK_tb_member_TO_wb_point_history_1` FOREIGN KEY (
+	`member_id`
+)
+REFERENCES `tb_member` (
+	`member_id`
+);
+
+ALTER TABLE `wb_goods_board` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_board_1` FOREIGN KEY (
+	`goods_board_seq`
+)
+REFERENCES `wb_goods` (
+	`goods_code`
+);
+
+ALTER TABLE `wb_goods_board` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_board_2` FOREIGN KEY (
+	`goods_board_kind`
+)
+REFERENCES `wb_goods` (
+	`goods_kind`
+);
+
+ALTER TABLE `wb_goods_board` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_board_3` FOREIGN KEY (
+	`company_code`
+)
+REFERENCES `wb_goods` (
+	`company_code`
+);
+
+ALTER TABLE `wb_board_image` ADD CONSTRAINT `FK_wb_goods_board_TO_wb_board_image_1` FOREIGN KEY (
+	`goods_code`
+)
+REFERENCES `wb_goods_board` (
+	`goods_board_code`
+);
+
+ALTER TABLE `wb_board_image` ADD CONSTRAINT `FK_wb_goods_board_TO_wb_board_image_2` FOREIGN KEY (
+	`goods_seq`
+)
+REFERENCES `wb_goods_board` (
+	`goods_board_seq`
+);
+
+ALTER TABLE `wb_board_image` ADD CONSTRAINT `FK_wb_goods_board_TO_wb_board_image_3` FOREIGN KEY (
+	`goods_kind`
+)
+REFERENCES `wb_goods_board` (
+	`goods_board_kind`
+);
+
+ALTER TABLE `wb_board_image` ADD CONSTRAINT `FK_wb_goods_board_TO_wb_board_image_4` FOREIGN KEY (
+	`Key`
+)
+REFERENCES `wb_goods_board` (
+	`company_code`
+);
+
+ALTER TABLE `wb_goods_buy_history` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_buy_history_1` FOREIGN KEY (
+	`goods_code`
+)
+REFERENCES `wb_goods` (
+	`goods_code`
+);
+
+ALTER TABLE `wb_goods_buy_history` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_buy_history_2` FOREIGN KEY (
+	`goods_kind`
+)
+REFERENCES `wb_goods` (
+	`goods_kind`
+);
+
+ALTER TABLE `wb_goods_buy_history` ADD CONSTRAINT `FK_wb_goods_TO_wb_goods_buy_history_3` FOREIGN KEY (
+	`company_code`
+)
+REFERENCES `wb_goods` (
+	`company_code`
+);
+
+ALTER TABLE `tb_basket` ADD CONSTRAINT `FK_tb_member_TO_tb_basket_1` FOREIGN KEY (
+	`member_id`
+)
+REFERENCES `tb_member` (
+	`member_id`
+);
+
